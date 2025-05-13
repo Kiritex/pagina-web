@@ -1,4 +1,7 @@
-body{
+.verde{
+    background-color: rgb(168, 230, 207);
+}
+.azul{
     background-color: rgb(174, 203, 250);
 }
 .menu{
