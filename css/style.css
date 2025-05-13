@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(174, 203, 250);
+}
+.menu{
+    position: relative;
+    display: inline-block;
+}
+.menu-btn{
+    background-color: rgb(168, 230, 207);
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+}
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(174, 203, 250);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.menu-content a{
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+.menu-content a:hover{
+    background-color: rgb(168, 230, 207);
+}
+.menu:hover .menu-content{
+    display: block;
+}
