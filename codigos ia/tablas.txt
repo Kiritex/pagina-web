@@ -1,0 +1,11 @@
+- Ventilador de 12V:  Proporciona flujo de aire. Se conecta a la fuente de 12V para funcionar.
+ 
+- Batería de 12V:  Fuente de alimentación para el ventilador y el circuito.  Proporciona la energía eléctrica necesaria para el funcionamiento del sistema.
+ 
+- Termistor NTC 10K:  Sensor de temperatura.  Su resistencia cambia con la temperatura, permitiendo medir la temperatura ambiente.
+ 
+- MOSFET IRFZ44N:  Transistor de efecto de campo. Actúa como un interruptor controlado por el circuito para encender y apagar el ventilador, regulando su velocidad según la señal del termistor.
+ 
+- Resistencia 2.2kΩ:  Elemento pasivo que, junto con el termistor, forma un divisor de voltaje.  Este divisor permite convertir el cambio de resistencia del termistor en un cambio de voltaje que el MOSFET puede interpretar para controlar la velocidad del ventilador.
+
+Esta es la información que encontré.
