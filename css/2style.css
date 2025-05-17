@@ -1,25 +1,36 @@
-.verde{
-    background-color: rgb(173, 235, 179);
-}
-.tabla-contenedor{
-    max-width: 600px;
-    overflow-x: auto;
-   
-    border: 1px solid black;
-}
-.tabla-limite{
-    width: 100%;
-    min-width: 400px;
-    border-collapse: collapse;
-}
-.tabla-limite th,
-.tabla-limite td{
-    border: 1px solid black;
-    padding: 8px;
+*{
+    font-size: 1.1rem;
     text-align: left;
+}
+h1{
+    font-size: 1.6rem;
+    text-align: center;
+}
+.verde{
+    background-color: rgb(156, 248, 165);
 }
 .informacion{
     margin-left: 80px;
+}
+.tabla-contenedor{
+    max-width: 900px;
+    overflow-x: auto;
+    margin: 0 auto;
+}
+.tabla{
+    width: 100%;
+    min-width: 600px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 5px solid #000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.tabla th,
+.tabla td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
 }
 .aside a{
     text-decoration: none;

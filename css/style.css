@@ -1,8 +1,13 @@
+*{
+    font-size: 1.1rem;
+    text-align: left;
+}
+h1{
+    font-size: 1.6rem;
+    text-align: center;
+}
 .azul{
     background-color: rgb(179, 235, 242);
-}
-.aside a{
-    text-decoration: none;
 }
 .informacion{
     margin-left: 80px;
