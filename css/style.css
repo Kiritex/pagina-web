@@ -6,9 +6,15 @@ h1{
     font-size: 1.6rem;
     text-align: center;
 }
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.4rem;
+}
 .azul{
     background-color: rgb(179, 235, 242);
 }
 .informacion{
-    margin-left: 80px;
+    margin-left: 100px;
 }

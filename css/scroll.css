@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .scroll-img {
+    width: 270px;
+    margin: 20px 0;
+    transition: transform 0.4s ease;
+    scroll-snap-align: center;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+  }
+  
+  .scroll-img.active {
+  transform: scale(1.5);
+  }

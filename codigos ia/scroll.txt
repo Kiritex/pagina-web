@@ -1,0 +1,50 @@
+¡Perfecto! Para lograr un *scroll animado vertical* con *efecto de zoom en la imagen central*, puedes combinar *CSS animations* con *JavaScript* o *CSS puro* usando `transform: scale()` y técnicas como `:nth-child()` o intersección visual con `IntersectionObserver`.
+
+Aquí te muestro una *versión simple con CSS puro* donde la imagen del centro se ve más grande mientras se hace scroll:
+
+---
+
+✅ *HTML*
+
+```html
+<div class="scroll-vertical">
+  <img src="img1.jpg" class="img">
+  <img src="img2.jpg" class="img">
+  <img src="img3.jpg" class="img center">
+  <img src="img4.jpg" class="img">
+  <img src="img5.jpg" class="img">
+</div>
+```
+
+---
+
+✅ *CSS (efecto central)*
+
+```css
+.scroll-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.img {
+  width: 100px;
+  margin: 20px 0;
+  transition: transform 0.3s ease;
+  scroll-snap-align: center;
+}
+
+.img.center {
+  transform: scale(1.5);
+}
+```
+
+---
+
+🧠 *¿Cómo funciona?*
+
+- `.scroll-vertical`: hace que las imágenes estén apiladas verticalmente y se puedan recorrer con scroll.
+- `.img.center`: esta clase la puedes aplicar manualmente o cambiar con JavaScript para que sea dinámica según la posición.

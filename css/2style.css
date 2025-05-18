@@ -6,11 +6,17 @@ h1{
     font-size: 1.6rem;
     text-align: center;
 }
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.4rem;
+}
 .verde{
     background-color: rgb(156, 248, 165);
 }
 .informacion{
-    margin-left: 80px;
+    margin-left: 100px;
 }
 .tabla-contenedor{
     max-width: 900px;
