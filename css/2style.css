@@ -41,3 +41,10 @@ h3{
 .aside a{
     text-decoration: none;
 }
+li{
+    margin-left: 45px;
+}
+.tabla th{
+    background-color: black;
+    color: white;
+}
