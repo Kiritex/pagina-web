@@ -18,26 +18,33 @@ h3{
 .informacion{
     margin-left: 100px;
 }
-.tabla-contenedor{
-    max-width: 900px;
+.tabla-contenedor {
+    max-width: 800px;
     overflow-x: auto;
     margin: 0 auto;
+    text-align: center; /* Centra la tabla si es inline-block */
 }
-.tabla{
-    width: 100%;
-    min-width: 600px;
+
+.tabla {
+    display: inline-block;
+    min-width: 200px;
+    max-width: 100%;
+    table-layout: fixed;
     border-collapse: separate;
     border-spacing: 0;
     border: 5px solid #000;
     border-radius: 10px;
     overflow: hidden;
+    word-wrap: break-word;
+    text-align: left; /* Asegura alineación del contenido */
 }
+
 .tabla th,
-.tabla td{
+.tabla td {
     border: 1px solid black;
     padding: 8px;
-    text-align: left;
 }
+
 .aside a{
     text-decoration: none;
 }
@@ -45,6 +52,9 @@ li{
     margin-left: 45px;
 }
 .tabla th{
-    background-color: black;
-    color: white;
+    background-color: rgb(179, 235, 242);
+    color: black;
+}
+video{
+    width: 300px;
 }
