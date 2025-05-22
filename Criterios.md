@@ -1,3 +1,4 @@
+# Criterios
 - 2 tablas
 - Mas de 5 img
 - 2 videos
@@ -22,4 +23,31 @@
 - Gif: Izquierda o derecha
 - Fuentes:
 - Tamaños: 1 titulo, 2 subtitulo y 3 parrafo
-- Tablas: 
+- Tablas: 2
+- **Faltan los margenes**
+
+# Explicacion codigo
+- proposito
+- materiales
+- elaboracion 
+- problemas
+- que como cuando donde porque
+- cantidad de lineas
+- cantidad de lenguaje utilizado
+- foto codigo
+- etiquetas utilizadas
+
+# Explicacion maqueta
+- que es
+- funcion
+- razon de eleccion 
+- como funciona
+- problemas
+- materiales
+-  diagrama
+
+# Autores 
+- Nombre de los participantes
+- Tal vez una foto
+- Tal vez info de contacto
+- Probablemente este apartado se quite

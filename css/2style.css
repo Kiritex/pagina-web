@@ -17,14 +17,14 @@ h3{
 }
 .informacion{
     margin-left: 100px;
+    margin-right: 30px;
 }
 .tabla-contenedor {
     max-width: 800px;
     overflow-x: auto;
     margin: 0 auto;
-    text-align: center; /* Centra la tabla si es inline-block */
+    text-align: center;
 }
-
 .tabla {
     display: inline-block;
     min-width: 200px;
@@ -38,13 +38,11 @@ h3{
     word-wrap: break-word;
     text-align: left; /* Asegura alineación del contenido */
 }
-
 .tabla th,
 .tabla td {
     border: 1px solid black;
     padding: 8px;
 }
-
 .aside a{
     text-decoration: none;
 }
@@ -56,5 +54,5 @@ li{
     color: black;
 }
 video{
-    width: 300px;
+    width: 200px;
 }
