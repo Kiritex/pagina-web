@@ -3,7 +3,7 @@
     text-align: left;
 }
 h1{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-align: center;
 }
 h2{
@@ -12,18 +12,16 @@ h2{
 h3{
     font-size: 1.4rem;
 }
-.verde{
-    background-color: rgb(156, 248, 165);
-}
-.informacion{
-    margin-left: 100px;
-    margin-right: 30px;
-}
 .tabla-contenedor {
-    max-width: 800px;
+    max-width: 900px;
     overflow-x: auto;
     margin: 0 auto;
     text-align: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 .tabla {
     display: inline-block;
@@ -55,4 +53,71 @@ li{
 }
 video{
     width: 200px;
+}
+.imgtabla{
+    width: 100px;
+}
+b{
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+.informacion{
+    font-family: 'Roboto';
+    font-weight: 300;
+
+}
+@font-face {
+    font-family: 'AncizarSerif';
+    src: url(../fonts/AncizarSerif-Bold.ttf);
+}
+h1, h2, h3{
+    font-family: 'AncizarSerif';
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'STIXTwoText';
+    src: url(../fonts/STIXTwoText-Italic.ttf);
+}
+.math{
+    font-family: 'STIXTwoText';
+    font-weight: 400;
+}
+.informacion{
+    margin-left: 70px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+body{
+    margin: 0;
+    background-color:  rgb(136, 171, 236);
+    margin-bottom: 30px;
+}
+main{
+    background-color: rgb(156, 248, 165);
+    padding: 10px;
+    min-height: 100vh;
+}
+
+.temas{
+    text-decoration: none;
+    color: black;
+}
+.contenedor_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    padding: 0 140px;
+}
+.gife{
+    max-height: 290px;
+}
+.gifc{
+    width: 270px;
+    height: auto;
 }

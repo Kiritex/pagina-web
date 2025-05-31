@@ -12,8 +12,8 @@
     <aside class="aside active" id="aside">
         <div class="head">
             <div class="profile">
-                <img src="../img/Minimalist Orange Online Link Store Market Logo.jpg" alt="img">
-                <p>Kiritex</p>
+                <img src="../img/logo.jpg" alt="img">
+                <p>Web</p>
             </div>
             <i class="bx bx-menu" id="menu"></i>
         </div>
@@ -46,12 +46,14 @@
         <script src="../js/menu.js"></script>
     </aside>
     
-    <aside class="informacion">
-    <br>
+    <main class="informacion">
     <h1>Prototipo</h1>
     <br>
-    <p>Explicaci&oacute;n de la elaboraci&oacute;n del prototipo</p><br>
-    <h2>Materiales</h2>
+    <p>Explicaci&oacute;n de la elaboraci&oacute;n del prototipo:</p><br>
+    <p>
+        Primero instalamos 2 baterías de  9 Voltios de corriente continua en paralelo, luego conectamos el negativo de la batería directo al ventilador de 12 Voltios y el positivo lo enviamos a un interruptor para controlar el circuito(apagar o encender), luego enviamos corriente a una resistencia de 2.2kohms que va conectada a una terminal del  termistor NTC 10k, también le instalamos corriente en la entrada del MOSFET IRFZ44N de ah&iacute; mismo le conectamos de la  parte del medio del mosfet un cable hacia la otra terminal del termistor, desde ah&iacute; también al positivo del ventilador y de la última terminal del mosfet la conectamos a la terminal donde conectamos la resistencia
+    </p><br>
+        <h2>Materiales</h2>
     <ul>
         <li>Ventilador de 12v</li>
         <li>Bater&iacute;a de 12v</li>
@@ -59,39 +61,52 @@
         <li>MOSFET IRFZ44N</li>
         <li>Resistencia 2.2kΩ</li>
     </ul>
-    <br>
+    <br><br><br>
+    <div class="contenedor_div">
+        <img src="../assets/gie1.gif" alt="gif_electricidad1" class="gife">
+        <img src="../assets/gie2.gif" alt="gif_electricidad2" class="gife">
+    </div><br><br><br>
     <div class="tabla-contenedor">
     <table class="tabla" >
         <thead>
             <tr>
                 <th>Componente</th>
-                <th>Uso</th>
+                <th style="text-align: center;">Uso</th>
+                <th>Imagen de referencia</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>Ventilador de 12V</td>
                 <td>Proporciona flujo de aire. Se conecta a la fuente de 12V para funcionar.</td>
+                <td><img src="../img/ventilador.jpeg" alt="ventilador" class="imgtabla"></td>
             </tr>
             <tr>
                 <td>Batería de 12V</td>
                 <td>Fuente de alimentación para el ventilador y el circuito.  Proporciona la energía eléctrica necesaria para el funcionamiento del sistema.</td>
+                <td><img src="../img/bateria.jpeg" alt="bateria" class="imgtabla"></td>
             </tr>
             <tr>
                 <td>Termistor NTC 10K</td>
                 <td>Sensor de temperatura.  Su resistencia cambia con la temperatura, permitiendo medir la temperatura ambiente.</td>
+                <td><img src="../img/termistor.jpeg" alt="termistor"class="imgtabla"></td>
             </tr>
             <tr>
                 <td>MOSFET IRFZ44N</td>
                 <td>Transistor de efecto de campo. Actúa como un interruptor controlado por el circuito para encender y apagar el ventilador, regulando su velocidad según la señal del termistor.</td>
+                <td><img src="../img/mosfet.jpeg" alt="mosfet"class="imgtabla"></td>
             </tr>
             <tr>
                 <td>Resistencia 2.2kΩ</td>
                 <td>Elemento pasivo que, junto con el termistor, forma un divisor de voltaje.  Este divisor permite convertir el cambio de resistencia del termistor en un cambio de voltaje que el MOSFET puede interpretar para controlar la velocidad del ventilador.</td>
+                <td><img src="../img/resistencia.jpeg" alt="resistencia"class="imgtabla"></td>
             </tr>
         </tbody>
     </table>
-    </div>
-    </aside>
+    </div><br>
+    <footer>
+        <a href="https://github.com/Kiritex/pagina-web" target="_blank">Vsitia nuestro repositorio Web</a>
+    </footer>
+</main>
 </body>
 </html>

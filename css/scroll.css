@@ -15,7 +15,7 @@ body {
   }
   
   .scroll-img {
-    width: 270px;
+    width: 200px;
     margin: 20px 0;
     transition: transform 0.4s ease;
     scroll-snap-align: center;
@@ -26,3 +26,6 @@ body {
   .scroll-img.active {
   transform: scale(1.5);
   }
+.scroll-img{
+  width: 400px;
+}

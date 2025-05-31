@@ -12,8 +12,8 @@
     <aside class="aside active" id="aside">
         <div class="head">
             <div class="profile">
-                <img src="img/Minimalist Orange Online Link Store Market Logo.jpg" alt="img">
-                <p>Kiritex</p>
+                <img src="img/logo.jpg" alt="img">
+                <p>Web</p>
             </div>
             <i class="bx bx-menu" id="menu"></i>
         </div>
@@ -46,45 +46,126 @@
         <script src="js/menu.js"></script>
     </aside>
 
-    <aside class="informacion">
-        <br><header><h1>Trabajo de electricidad</h1></header>
+    <main class="informacion">
+        <header><h1>Trabajo de electricidad</h1></header>
     <div>
     <br>
     <p>
         El cálculo diferencial se relaciona directamente con el funcionamiento de un sistema de ventilación con sensor de temperatura porque  permite analizar cómo varía la temperatura respecto al tiempo y cómo esa variación afecta el sistema. Usando derivadas, se puede determinar la velocidad de cambio de la temperatura, lo cual es útil para que el sistema responda adecuadamente por ejemplo, encendiendo o ajustando la velocidad del ventilador cuando la temperatura aumenta rápidamente.
     </p><br>
+    <div class="divm">
+        <img src="assets/gim1.gif" alt="m1" class="gifm">
+    </div><br>
     <p>
-        Un sistema de ventilación con sensor de temperatura se relaciona con el cálculo diferencial porque:
-        <ul>
-<a href="#t1"><b>1. Funciones continuas</b></a>
-   <li>La temperatura cambia suavemente en el tiempo → se modela como una función continua.</li> 
-
-<a href="#t2"><b>2. Derivada como función</b></a>
-   <li>La derivada de la temperatura indica qué tan rápido sube o baja.</li> 
-   <li>El sistema usa eso para decidir cuándo encender/apagar el ventilador.</li> 
-
-<a href="#t3"><b>3. Optimización</b></a>
-   <li>Se busca que el ventilador funcione de forma eficiente (ni antes ni después).</li> 
-   <li>Se pueden usar derivadas para encontrar puntos máximos o mínimos de temperatura.</li> 
-
-<a href="#t4"><b>4. Primera y segunda derivada</b></a>
-   <li>Primera derivada: indica si la temperatura sube o baja.</li> 
-   <li>Segunda derivada: indica si el cambio se acelera o desacelera.</li> 
-   </ul>
+        Para comprobar la relaci&oacute;n entre nuestro prototipo y la materia de c&aacute;lculo diferencial usamos los guientes temas como base:<br>
+        <a href="#t1" class="temas"><b>1. Derivada como función</b></a><br>
+        <a href="#t2" class="temas"><b>2. Funciones continuas</b></a><br>
+        <a href="#t3" class="temas"><b>3. Optimización</b></a><br>
+        <a href="#t4" class="temas"><b>4. Primera y segunda derivada</b></a><br>
+        <a href="#conclusion" class="temas"><b>Conclusi&oacute;n</b></a>
     </p><br>
     
-    <h2 id="t1">Funciones continuas</h2><br>
+    <h2 id="t1">Derivada como una funci&oacute;n</h2>
+    <p>Una derivada como funci&oacute;n es una herramienta matem&aacute;tica que describe c&oacute;mo cambia una cantidad con respecto a otra. Si tenemos una funci&oacute;n y sacamos su derivada podremos obtener la velocidad de cambio de nuestra funci&oacute;n
+    </p><br>
+    <p>
+        La relaci&oacute;n con nuestro prototipo se debe a que gracias a la gr&aacute;fica usada nos permite ver el momento en que la temperatura inicial(la que activa el sensor) se regula hasta la temperatura ambiente
+    </p><br>
+    <h2 id="t2">Funciones continuas</h2>
+    <p>
+        Las funciones continuas son funciones matem&aacute;ticas que no presentan 'saltos' o 'interrupciones', se pueden interpretar de forma sencilla como el dibujar una gr&aacute;fica sin levantar el l&aacute;piz del papel
+    </p>
+    <p>
+        Su uso radica en que sirven para modelar procesos reales, por ejemplo:
+        <ul>
+            <li>Crecimiento(poblacional, de plantas, econ&oacute;mico, etc.)</li>
+            <li>Movimiento o cambios de temperatura(<b>que es los que estamos abordando aqu&iacute; mismo</b>)</li>
+        </ul>
+        Tambi&eacute;n son utilizadas para aplicar herramientas de c&aacute;lculo como:
+        <ul>
+            <li>Derivadas(otro tema que abordaremos en unos momentos)</li>
+            <li>Teoremas importantes</li>
+        </ul>
+    </p><br>
+    <p>
+        Las funciones continuas se relacionan con nuestro prototipo ya que a trav&eacute;s de estas podemos determinar los cambios de temperatura del mismo
+    </p>
+    <p>
+        La funci&oacute;n que utilizaremos para nuestro prototipo es la <b>Ley de Newton de enfriamiento y calentamiento</b>
+    </p>
+        <p class="formulac">
+        <span class="math formula" style="text-align: center;">T(t)=T<sub class="math formula">amb</sub> + (T<sub class="math formula">0</sub> - T<sub class="math formula">amb</sub>) &middot; e<sup class="math formula">-kt</sup></span></p>
+        <br>
+        <P>
+        Esta fuci&oacute;n se divide de la siguiente manera:<br>
+        <ul>
+            <li>Temperatura ambiente (<span class="math">T<sub class="math">amb</sub></span>): La temperatura a la que estamos actualmente(yo us&eacute; 33&deg;C para emplear mi funci&oacute;n) </li>
+            <li>Temperatura inicial (<span class="math">T<sub class="math">0</sub></span>): La temperatura con la que se activa el sensor(para esto us&eacute; 45&deg;C como base)</li>
+            <li>Constante de enfriamiento(<span class="math">k</span>): Esto nos permite determinar que tan r&aacute;pido se regula la temperatura(si el valor es mayor, el tiempo que tarda la temperatura en regularse ser&aacute; menor y como aqu&iacute; la temperatura decrece el valor de <span class="math">k</span> es negativo. El valor que usamos aqu&iacute; es <span class="math">-0.16</span> )</li>
+            <li>Exponencial(<span class="math">e</span>): Parte de la funci&oacute;n exponencial, representa la base de los logaritmos naturales(es un n&uacute;mero irracional como <span class="math">&pi;</span> y su valor aproximado es: <span class="math">2.71828</span>)</li>
+        </ul>
+        </p>
+        <p>Obteniendo as&iacute; la siguiente f&oacute;rmula: <br></p>
+        <p class="formulac">  
+            <span class="math formula">T(t)=33+(45-33) &middot; e<sup class="math formula">-0.16t</sup></span><br>
+            <span class="math formula">T(t)=33+12e<sup class="math formula">-0.16t</sup></span>
+        </p>
+    <p>
+        Esta funci&oacute;n nos permite determinar que tanto tarda el ventilador en llegar a la temperatura ambiente
+    </p>
+    <img src="img/geogebra.png" alt="grafica" class="grafica"><br>
+    <p>
+        La gr&aacute;fica nos muestra como la temperatura empieza en los 45&deg;C y con el tiempo(empezando desde el segundo 30) la temperatura se regula hasta la temperatura ambiente(33&deg;C)
+    </p><br>
 
-    <h2 id="t2">Derivada como una funci&oacute;n</h2><br>
-
-    <h2 id="t3">Optimizaci&oacute;n</h2><br>
-
-    <h2 id="t4">Primera y segunda derivada</h2><br>
-
-   </div>
+    <h2 id="t3">Optimizaci&oacute;n</h2>
+    <p>
+    La optimizaci&oacute;n es el proceso de mejorar un sistema para que funcione de la mejor manera posible seg&uacute;n ciertos criterios, como eficiencia, velocidad, consumo energ&eacute;tico, costo, etc. <br>
+    Una forma m&aacute;s sencilla de explicarlo es el hecho de obtener el mejor valor posible para resolver un problema
+    </p><br>
+    <p>
+        La optimizaci&oacute;n est&aacute; presente en nuestro prototipo ya que este proceso es necesario para obtener el valor de la constante de enfiramiento(<span class="math">k</span>). El m&eacute;todo que usamos para obtener <span class="math">k</span> consiste en una serie de prueba y error en base a los datos que ya tenemos(una f&oacute;rmula casi completa) y probar con diferentes valores para <span class="math">k</span>, para lo cual usamos Geogebra
+    </p><br>
+    <p>
+        Considerando que la temperatura se regula a los 30 segundos(hipot&eacute;ticamente hablando) empezamos a darle a <span class="math">k</span> un valor de <span class="math">-0.1</span>
+    </p>
+    <img src="img/geogebra2.png" alt="grafica2" class="grafica">
+    <p>Como se puede observar, la temperatura a los 30 segundos es de 33.6&deg;C por lo que el valor de <span class="math">k</span> es incorrecto. Intentemos con otro valor</p><br>
+    <img src="img/geogebra3.png" alt="grafica3" class="grafica">
+    <p>Aqu&iacute; le dimos un valor de <span class="math">-0.13</span> y la temperatura disminuyo a 33.24&deg;C por lo que nos estamos acercando, intentemos de nuevo</p><br>
+    <img src="img/geogebra4.png" alt="grafica4" class="grafica">
+    <p>Al darle un calor de <span class="math">-0.16</span> obtenemos que a los 30 segundos la temepratura llega a los 33.1&deg;C, un valor muy cercano al original y por lo cual le dimos ese valor a <span class="math">k</span></p><br>
+    <h2 id="t4">Primera y segunda derivada</h2>
+    <p>
+        La <b>primera derivada</b> se relaciona con nuestro prototipo ya que esta mide la tasa de cambio de una funci&oacute;n, es decir, qu&eacute; tan r&aacute;pido est&aacute; cambiando el valor de la variable dependiente (en este caso, la temperatura) respecto al tiempo <br>
+        Si sacamos la derivada de nuestra funci&oacute;n:
+    </p>
+    <p class="formulac">
+        <span class="math formula">T(t)=33+12e<sup class="math formula">-0.16t</sup></span> <br>
+        <span class="math formula">T'(t)= -1.92e<sup class="math formula">-0.16t</sup></span>
+    </p>
+    <p>
+        La primera derivada es negativa, lo que indica que la temperatura est&aacute; bajando con el tiempo
+    </p><br>
+    <p>
+        La <b>segunda derivada</b> mide c&oacute;mo est&aacute; cambiando la velocidad de cambio. Es decir, mide la aceleraci&oacute;n del cambio de temperatura <br>
+        Si sacamos la derivada de nuestra primera derivada derivada:
+    </p>
+    <p class="formulac">
+        <span class="math formula">T'(t)= -1.92e<sup class="math formula">-0.16t</sup></span> <br>
+        <span class="math formula">T''(t)= 0.3072e <sup class="math formula">-0.16t</sup></span>
+    </p>
+    <p>
+        Esta derivada es positiva, lo que significa que la velocidad con la que baja la temperatura disminuye: es decir, el sistema se enfr&iacute;a m&aacute;s lento con el tiempo
+    </p><br>
+    <h2 id="conclusion">Conclusi&oacute;n</h2>
+    <p>
+        Gracias a los temas antes dedos podemos entender la raz&oacute;n por la cual la materia de calculo diferencial se relaciona con nuestro protoripo de sistema de ventilaci&oacute;n con sensor de temperatura
+    </p>
+   </div><br><br>
    <footer>
-    <a href="">Vsitia nuestro repositorio Web</a>
+    <a href="https://github.com/Kiritex/pagina-web" target="_blank">Vsitia nuestro repositorio Web</a>
    </footer>
-   </aside>
+</main>
 </body>
 </html>
