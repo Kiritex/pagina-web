@@ -5,4 +5,3 @@ menu.onclick = () => {
     aside.classList.toggle('active');
 
 }
-
